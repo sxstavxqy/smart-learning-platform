@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>智能软件工程学习平台</title>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="portal">
+  <h1>智能软件工程学习平台</h1>
+  <p class="sub">学 · 记 · 诊 · 画 · 荐 · 干 ｜ 三端分离 ｜ AI 评测贯穿全流程</p>
+  <div class="portal-cards">
+    <div class="portal-card" onclick="location.href='student.html'">
+      <div class="icon">🎓</div>
+      <h2>学生端</h2>
+      <ul>
+        <li>按知识点学习原样资料</li>
+        <li>学完即练、逐题计时</li>
+        <li>诊断结果与证据回溯</li>
+        <li>自主标识薄弱知识点</li>
+        <li>学习推荐与动作记录</li>
+      </ul>
+      <span class="go">进入学生端 →</span>
+    </div>
+    <div class="portal-card" onclick="location.href='teacher.html'">
+      <div class="icon">🧑‍🏫</div>
+      <h2>教师端</h2>
+      <ul>
+        <li>学情看板与重难点诊断</li>
+        <li>主观题复核（改判留痕）</li>
+        <li>知识图谱构建（E5）与审核</li>
+        <li>E4 标记审核与证据链</li>
+        <li>资料上传、真题扫描、AI 评测</li>
+      </ul>
+      <span class="go">进入教师端 →</span>
+    </div>
+    <div class="portal-card" onclick="location.href='admin.html'">
+      <div class="icon">⚙️</div>
+      <h2>管理端</h2>
+      <ul>
+        <li>用户 / 课程 / 资源 / 题目管理</li>
+        <li>阈值与规则版本配置</li>
+        <li>AI 模型与 CI/CD 配置</li>
+        <li>评测台账与系统日志</li>
+        <li>备份与安全检查</li>
+      </ul>
+      <span class="go">进入管理端 →</span>
+    </div>
+  </div>
+  <p class="portal-footer">
+    前端演示版：数据保存在浏览器 localStorage，可在管理端“备份恢复”导出。<br>
+    接口契约见 docs/design/前后端接口设计.md；后端就绪后替换 js/api.js 即可。<br>
+    <a href="#" onclick="localStorage.removeItem('smart-learning-db-v2');location.reload();return false;" style="color:#7fd6c9">重置演示数据</a>
+  </p>
+</div>
+</body>
+</html>
